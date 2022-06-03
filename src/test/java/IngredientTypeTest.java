@@ -18,7 +18,7 @@ public class IngredientTypeTest {
         this.priceIngredient = priceIngredient;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: {0} {1} {2}")
     public static Object[][] getNameAndPrice() {
         return new Object[][]{
                 {IngredientType.SAUCE, "hot sauce", 100},
