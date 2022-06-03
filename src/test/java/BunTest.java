@@ -28,9 +28,14 @@ public class BunTest {
     }
 
     @Test
-    public void parameterizedBunTest() {
+    public void parameterizedBunNameTest() {
             Bun bun = new Bun(name, price);
             assertEquals(name, bun.getName());
-            assertEquals(price, bun.getPrice(), 0.0f);
+    }
+
+    @Test
+    public void parameterizedBunPriceTest() {
+        Bun bun = new Bun(name, price);
+        assertEquals(price, bun.getPrice(), 0.0f);
     }
 }
